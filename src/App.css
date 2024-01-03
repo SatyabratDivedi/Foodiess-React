@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bgImg {
+  background-image: url(./assets/assets/vector3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.spin {
+  animation: spiner 20s infinite linear;
+}
+@keyframes spiner {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+.spinImg {
+  border: 5px solid;
+  height: 65vh;
+}
+
+.priceBudge {
+  position: absolute;
+  padding: 7px;
+  background-color: #febf01;
+  border-radius: 0px 0px 10px 0px;
+}
+
+.buttonn {
+  background: #fdbe00;
+  color: #fff;
+  border-radius: 11px;
+  box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transition: all ease-in-out 200ms;
+}
+
+.buttonn:hover {
+  box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+  transform: translate(3px, -2px) scale(1);
+}
+
+.buttonn:active {
+  transform: translate(2px, -1px) scale(0.8);
+}
+
+@keyframes open {
+  0% {
+    width: 0px;
+    top: 20px;
+  }
+  70% {
+    width: 50vw;
+  }
+  100% {
+    width: 40vw;
+    right: 0;
+    top: 71px;
+  }
+}
+@keyframes close {
+  0% {
+    height: 30vh;
+    top: -1000px;
+    width: 40vw;
+  }
+  50% {
+    height: 35vh;
+    width: 40vw;
+  }
+  100% {
+    height: 0vh;
+    top: -1000px;
+    width: 40vw;
+  }
+}
+.positionCenter {
+  top: 12vh;
+  left: -18px;
+  background-color: #febf01;
+  width: 55px;
+  height: 55px;
+  border-radius: 0px 20px 20px 0px;
+  animation: leftRight 1s infinite ease-in;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.positionCenter:active {
+  background-color: #c0e2e7;
+  width: 60px;
+  height: 60px;
+}
+
+@keyframes leftRight {
+  0% {
+    padding: 10px;
+  }
+  50% {
+    padding: 5px;
+  }
+  100% {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .maxWidthIconOpen {
+    position: absolute;
+    background-color: #fefce8;
+    z-index: -10;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px 0px 0px 50px;
+    gap: 10%;
+
+    transition: all 0.3s;
+    animation: open 0.4s forwards;
+  }
+  .maxWidthIconClose {
+    position: absolute;
+    background-color: #fefce8;
+    z-index: -10;
+    height: 30vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px 0px 0px 50px;
+    gap: 10%;
+    right: 0;
+
+    transition: all 0.3s;
+    animation: close 0.7s forwards;
+  }
+  .maxWidthIcon:hover {
+    scale: 1.02;
+  }
+
+  .maxWidthIconDark {
+    background-color: #1e293b;
+  }
+  .pb {
+    padding-bottom: 80px;
+  }
+  .martop {
+    margin-top: 54px;
+  }
+}
