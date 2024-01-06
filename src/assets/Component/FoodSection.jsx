@@ -6,7 +6,7 @@ function FoodSection({ cart, setCart, setCartValue }) {
   return (
     <div className=" dark:bg-slate-700 bg-slate-400 shadow-xl">
       <div className="mx-auto max-w-2xl px-4 py-1  lg:max-w-7xl lg:pt-4 ">
-        <h2 className="text-2xl font-bold tracking-tight text-gray-900">
+        <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
           Customers Choice
           <span className="text-3xl text-yellow-400"> BURGER (🍔)</span>
         </h2>
