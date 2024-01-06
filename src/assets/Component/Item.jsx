@@ -25,7 +25,7 @@ function Item({ product, cart, setCart, setCartValue }) {
     }
     setOrderValue(orderValue + 1);
     toast.success(`😊 (${itemName}) added `, {
-      position: "top-center",
+      position: "bottom-center",
       autoClose: 500,
       hideProgressBar: false,
       closeOnClick: true,
@@ -52,7 +52,7 @@ function Item({ product, cart, setCart, setCartValue }) {
       setOrderValue(orderValue - 1);
 
       toast.warning(` 😊 (${product.itemName}) removed `, {
-        position: "top-center",
+        position: "bottom-center",
         autoClose: 100,
         hideProgressBar: true,
         closeOnClick: true,
@@ -63,7 +63,7 @@ function Item({ product, cart, setCart, setCartValue }) {
       });
     } else {
       toast.warning(` 😊 (${product.itemName}) not in cart `, {
-        position: "top-center",
+        position: "bottom-center",
         autoClose: 100,
         hideProgressBar: true,
         closeOnClick: true,

@@ -5,14 +5,12 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./Page/About.jsx";
 import Contact from "./Page/Contact";
 import ItemDetail from "./Page/ItemDetail.jsx";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 AOS.init({
   offset: 100,
-  mirror: true,
+  mirror: false,
 });
-
-
 
 const router = createBrowserRouter([
   {

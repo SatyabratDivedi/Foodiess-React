@@ -22,7 +22,6 @@
     rotate: 360deg;
   }
 }
-.spinImg {
   border: 5px solid;
   height: 65vh;
 }
@@ -112,6 +111,10 @@
 }
 
 @media screen and (max-width: 769px) {
+  .andr {
+    margin-top: 6rem;
+    margin-bottom: 7rem;
+  }
   .maxWidthIconOpen {
     position: absolute;
     background-color: #fefce8;
