@@ -56,15 +56,15 @@ function Hero() {
 
         <div className="md:flex md:max-w-[600px] md:flex-col">
           <div className=" andr h-[320px] rounded-full md:w-80 lg:w-[26vw] w-[20rem] md:translate-y-20 md:-translate-x-6 lg:translate-y-24 2xl:translate-y-32 lg:-translate-x-40">
-            <div className=" md:scale-125 lg:scale-150 duration-300 md:-translate-y-12 ">
+            <div className=" md:scale-[1.1] lg:scale-[1.3] duration-300 md:-translate-y-12 ">
               <img
-                className=" spin mt-20 sm:max-h-[100px] rounded-full"
+                className=" spin mt-20 sm:max-h-[350px] rounded-full"
                 src={spinImg}
                 alt=""
               />
             </div>
           </div>
-          <div className=" mt-4 md:mt-44 mb-9 w-[16rem] md:w-[20rem] md:-translate-x-3 xl:translate-x-32 2xl:translate-x-40 2xl:translate-y-8 lg:w-[5.5rem] lg:translate-x-24 lg:-translate-y-16 h-[5.8rem] lg:h-[16rem] flex bg-yellow-300 rounded-full pt-2 pb-2 lg:flex-col m-auto ">
+          <div className=" md:mt-44 mb-9 w-[16rem] md:w-[20rem] md:-translate-x-3 md:-translate-y-4 xl:translate-x-28 2xl:translate-x-40 2xl:translate-y-8 lg:w-[5.5rem] lg:translate-x-20 lg:-translate-y-28 h-[5.8rem] lg:h-[16rem] flex bg-yellow-300 rounded-full pt-2 pb-2 lg:flex-col m-auto ">
             {FoodList.map((food) => (
               <img
                 className=" lg:w-32  z-10 w-[5.5rem] cursor-pointer mx-auto hover:scale-105 duration-300 "
