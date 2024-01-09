@@ -25,7 +25,7 @@ function Hero() {
     <>
       <div
         data-aos="fade-down"
-        className="bgImg flex flex-col-reverse md:flex-row  justify-center items-center min-w-[100%] min-h-[550px] md:min-h-[800px] sm:min-h-[600px]
+        className=" bgImg flex flex-col-reverse md:flex-row  justify-center items-center min-w-[100%] min-h-[550px] md:min-h-[800px] sm:min-h-[600px]
           bg-slate-600 dark:bg-base-200 dark:text-white drop-shadow-lg ">
         <div className="container pb-8 sm:pb-0 lg:pr-56  ">
           <div className="grid grid-cols-1">
